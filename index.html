@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConnect 2025</title>
+    
+    <!--Utilizando style para organizar a tabela e tirar a marcação das abreviações -->
+    <style>
+        abbr { 
+            text-decoration: none;
+            border-bottom: none;
+            cursor: default;
+        }
+
+         .tabelaP {
+            width:  800%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            max-width: 900px;
+        }
+
+        .tabelaP th,
+        .tabelaP td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .tabelaP img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <!-- Parte do Sobre o Evento -->
+        <section> <!-- ATENÇÃO Acrescentar id da parte de navegação -->
+            <img src="/Fase1-ProjetoWebFrontEnd-main/assets/imageLogoBanner.jpeg" alt="Banner TechConnect" height="300px">
+            <h2 id="comecoDaPagina"> Sobre o Evento </h2>
+            <p> 
+                <strong>TechConnect 2025 – Inovação para o Futuro</strong> é mais que um evento, é um ponto de encontro entre mentes criativas que estão moldando a próxima geração da tecnologia. 
+            </p>
+            <p>
+                Reunindo especialistas, estudantes e apaixonados pelo universo digital, o evento tem como objetivo impulsionar a inovação tecnológica, promover conexões valiosas entre profissionais e inspirar novas ideias por meio de palestras, painéis e workshops interativos. Com uma programação dinâmica, o TechConnect 2025 convida todos a explorarem temas essenciais como <em> Inteligência artificial, startups sustentáveis e desenvolvimento web</em>, em um ambiente propício à troca de experiências e ao crescimento profissional.
+            </p>
+        </section>
+
+        <!-- Parte da Programação -->
+         <section>  <!-- Acrescentar id da parte de navegação -->
+            <h2> Programação </h2>
+            <ul>
+                <li> <strong>08h00 </strong> - Abertura</li>
+                <li> <strong>09h00 </strong> - Palestra: <abbr title="Inteligência artificial"> "IA </abbr> na Educação" </li> <!-- Utilizando 'abbr' para definir a abreviação  -->
+                <li> <strong>11h00</strong> - Painel: "Startups e Tecnologia Sustentável" </li>
+                <li> <strong>14h00</strong> - Workshop: "Startups e Tecnologia Sustentável" </li>
+            </ul>
+
+         </section>
+        
+        <!-- Parte dos Palestrantes -->
+         <section> <!-- Acrescentar id da parte de navegação -->
+            <h2> Palestrantes </h2>
+            <table class="tabelaP">
+                <tr>
+                    <th>Fotos</th>
+                    <th>Nome</th>
+                    <th>Tema da Palestra</th>
+                    <th>Minibiografia</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="./assets/imageIAMaria.png" alt="foto da palestrante Maria Gabriela"
+                    </td>
+                    <td>
+                        Maria Gabriela
+                    </td>
+                    <td>
+                        <abbr title="Inteligência artificial"> IA </abbr> na Educação
+                    </td>
+                    <td>
+                        Especialista em tecnologias educacionais, Maria desenvolve soluções baseadas em  <abbr title="Inteligência artificial"> IA </abbr> para melhorar o aprendizado em escolas públicas.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="./assets/imageIACarlos.png" alt="foto do palestrante Carlos"
+                    </td>
+                    <td>
+                        Carlos Moura
+                    </td>
+                    <td>
+                        Startups Sustentáveis
+                    </td>
+                    <td>
+                        Empreendedor e fundador da GreenTech, Carlos atua com inovação voltada à sustentabilidade no setor de tecnologia.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="./assets/imageIAManuela.png" alt="foto da palestrante Emanuela Andrade"
+                    </td>
+                    <td>
+                        Emanuela Andrade
+                    </td>
+                    <td>
+                        Desenvolvimento Web
+                    </td>
+                    <td>
+                        Emanuela é desenvolvedora front-end e instrutora, conhecida por suas abordagens práticas e envolventes em web design responsivo.
+                    </td>
+                </tr>
+
+               
+            </table>
+         </section>
+
+
+        <!-- Parte das inscrições -->
+        <section>
+            <h2> Inscrições </h2>
+
+            <!-- Formulário -->
+            <!-- Confirmação antes do envio do forms-->
+            <form onsubmit="return confirm('Deseja realmente enviar o formulário?')">
+                <fieldset>
+                    <legend>Completa suas informações: </legend>
+                    <div>
+                        <!-- Solicita nome e email -->
+                        <label>Nome: </label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label>Email: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+                
+                <!-- Botão para envio do forms e direciona para o inicio da página -->
+                <button type="submit" onclick="window.location.href='#comecoDaPagina'">Enviar</button>
+
+            </form>
+        </section>
+
+        <!-- Contatos (email e redes sociais) -->
+        <aside>
+            <h2> Contatos </h2>
+            <p>Nos sigam nas nossas redes sociais: </p>
+            <ul>
+                <!-- Direciona para o liunk das redes sociais -->
+                <li>Instagram: <a href="https://www.instagram.com/" target="_blank">@techconnect</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">www.linkedin.com/in/tech-connect-2025</a></li>
+            </ul>
+
+            <!-- Direciona para o email -->
+            <p>Ficou com alguma dúvida? </p>
+            <ul>
+                <li>Envia um <a href="mailto: suporte@techconnect.com.br">email</a> para o nosso suporte!</li>
+            </ul>
+        </aside>
+
+    </main>
+</body>
+</html>
